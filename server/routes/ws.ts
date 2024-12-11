@@ -17,7 +17,7 @@ export default defineWebSocketHandler({
         },
       });
     }
-    const instructions = '明るく元気に話してください。仲の良い友人のように振る舞い、敬語は使わないでください。出力は日本語でしてください。';
+    const instructions = 'always answer in english no matter what language the user says';
 
     connections[peer.id].on('open', () => {
       // Realtime APIのセッション設定
